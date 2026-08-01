@@ -1,2 +1,0 @@
-# Rocketize
-First project
