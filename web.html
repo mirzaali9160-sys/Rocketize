@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imperial Multi Cuisine Restaurant — Authentic Hyderabadi Biryani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style href="web.css"></style>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+<div class="overlay" id="overlay"></div>
+
+<!-- ================= HEADER ================= -->
+<header id="siteHeader">
+  <div class="logo">IMPERIAL <span>MULTI CUISINE</span></div>
+  <nav id="mainNav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reserve">Reserve</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-actions">
+    <a class="icon-btn" href="tel:9700342799" title="Call restaurant" aria-label="Call restaurant">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <div class="icon-btn" id="cartToggle" title="Your order" aria-label="Open cart">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span class="cart-badge" id="cartCount">0</span>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero jaali-bg" id="home">
+  <div class="hero-arch-glow"></div>
+  <div class="hero-content">
+    <div class="eyebrow reveal">Est. Hyderabad · New Malakpet</div>
+    <h1 class="reveal">Experience the <em>Authentic</em> Taste of Hyderabad</h1>
+    <p class="reveal">Rich, aromatic dum biryanis, Mughlai kebabs, Indo-Chinese favourites and Continental plates — cooked slow, served with warmth, in the heart of Hyderabad.</p>
+    <div class="hero-btns reveal">
+      <a href="#menu" class="btn btn-primary" onclick="openMenuOrder()">Order Online</a>
+      <a href="#reserve" class="btn btn-outline">Reserve a Table</a>
+    </div>
+    <div class="hero-meta reveal">
+      <div><span class="num">30+</span><span class="lbl">Signature Dishes</span></div>
+      <div><span class="num">11AM–11:30PM</span><span class="lbl">Open Daily</span></div>
+      <div><span class="num">4.7★</span><span class="lbl">Customer Rating</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-plate">
+        <div class="about-badge">100%<br>Halal<br>Kitchen</div>
+        <svg class="steam-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--gold-bright)">
+          <path d="M30 70 Q25 55 35 45 Q45 35 38 20" stroke-opacity="0.8"/>
+          <path d="M50 70 Q45 50 55 40 Q65 30 58 15" stroke-opacity="0.6"/>
+          <path d="M70 70 Q65 55 72 45" stroke-opacity="0.5"/>
+          <ellipse cx="50" cy="78" rx="34" ry="8"/>
+        </svg>
+        <div class="cap">— Dum pukht, sealed with dough —</div>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="kicker">Our Story</span>
+      <h2>Welcome to Imperial Multi Cuisine Restaurant</h2>
+      <p>Tucked into Saidabad Main Road in New Malakpet, Imperial brings together the slow-cooked heritage of Hyderabadi dum biryani with the everyday comforts of Indian, Chinese, Mughlai and Continental cooking — under one roof, at one table.</p>
+      <p>Every biryani is sealed and cooked on dum the traditional way; every gravy is finished to order. Whether it's a family Sunday lunch, a celebration, or a quick dinner run, we cook it like it's for our own family.</p>
+      <div class="about-stats">
+        <div><span class="num">12+</span><span class="lbl">Years Serving</span></div>
+        <div><span class="num">200+</span><span class="lbl">Covers / Day</span></div>
+        <div><span class="num">6</span><span class="lbl">Cuisines</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SIGNATURE DISHES ================= -->
+<section id="signature">
+  <div class="section-head center reveal">
+    <span class="kicker">Fan Favourites</span>
+    <h2>Signature Dishes</h2>
+    <p>The plates people drive across the city for — led, of course, by the dum biryani.</p>
+  </div>
+  <div class="dish-row reveal" id="dishRow"></div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section id="menu">
+  <div class="section-head reveal">
+    <span class="kicker">Digital Menu</span>
+    <h2>What's Cooking Today</h2>
+    <p>Browse by category and add straight to your order — pickup or delivery, your call at checkout.</p>
+  </div>
+  <div class="menu-tabs reveal" id="menuTabs"></div>
+  <div id="menuPanels" class="reveal"></div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section id="why">
+  <div class="section-head center reveal">
+    <span class="kicker">Why Imperial</span>
+    <h2>What Keeps Tables Full</h2>
+  </div>
+  <div class="feature-grid reveal" id="featureGrid"></div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery">
+  <div class="section-head center reveal">
+    <span class="kicker">A Peek Inside</span>
+    <h2>Restaurant Gallery</h2>
+    <p>From the tandoor to the table — a look at where your meal comes together.</p>
+  </div>
+  <div class="gallery-grid reveal" id="galleryGrid"></div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section id="reviews">
+  <div class="section-head center reveal">
+    <span class="kicker">Guests Say</span>
+    <h2>Customer Reviews</h2>
+  </div>
+  <div class="review-grid reveal" id="reviewGrid"></div>
+</section>
+
+<!-- ================= RESERVATION ================= -->
+<section id="reserve">
+  <div class="reserve-grid">
+    <div class="reserve-copy reveal">
+      <span class="kicker">Book Ahead</span>
+      <h2 style="font-size:clamp(28px,3.6vw,38px); margin-bottom:20px;">Reserve Your Table</h2>
+      <p>Weekend evenings fill up fast — especially family sections. Send a request and our team will confirm by phone within a few hours.</p>
+      <ul class="reserve-points">
+        <li><span>—</span> Free cancellation up to 2 hours before</li>
+        <li><span>—</span> Family & large-group seating available</li>
+        <li><span>—</span> Let us know allergies or seating preferences</li>
+      </ul>
+    </div>
+    <form class="card reveal" id="reserveForm">
+      <div class="form-row">
+        <div class="field"><label>Full Name</label><input type="text" required placeholder="Your name"></div>
+        <div class="field"><label>Phone Number</label><input type="tel" required placeholder="+91 90000 00000"></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+        <div class="field"><label>Guests</label>
+          <select>
+            <option>1–2 Guests</option><option>3–4 Guests</option><option>5–8 Guests</option><option>9+ Guests</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label>Date</label><input type="date" required></div>
+        <div class="field"><label>Time</label><input type="time" required></div>
+      </div>
+      <div class="field full" style="margin-bottom:24px;">
+        <label>Special Requests</label>
+        <textarea placeholder="Birthday setup, high chair, seating preference..."></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-ghost" onclick="checkAvailability(event)">Check Availability</button>
+        <button type="submit" class="btn btn-primary">Reserve Now</button>
+      </div>
+      <div class="form-note" id="reserveNote"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= CATERING ================= -->
+<section id="catering">
+  <div class="catering-grid">
+    <div class="reveal">
+      <span class="kicker">Beyond the Restaurant</span>
+      <h2 style="font-size:clamp(28px,3.6vw,38px); margin-bottom:8px;">Catering For Every Occasion</h2>
+      <p style="color:var(--cream-dim); line-height:1.8; margin-top:14px;">From an intimate birthday spread to a 500-guest wedding, our catering team plans the menu, the counters, and the timing around your event.</p>
+      <div class="catering-tags">
+        <span>Weddings</span><span>Birthdays</span><span>Corporate Events</span>
+        <span>Family Gatherings</span><span>Festivals</span><span>Outdoor Events</span>
+      </div>
+      <a href="#cateringForm" class="btn btn-outline">Enquire For Your Event</a>
+    </div>
+    <form class="card reveal" id="cateringForm">
+      <div class="form-row">
+        <div class="field"><label>Name</label><input type="text" required></div>
+        <div class="field"><label>Phone</label><input type="tel" required></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label>Event Type</label>
+          <select><option>Wedding</option><option>Birthday</option><option>Corporate</option><option>Family Gathering</option><option>Other</option></select>
+        </div>
+        <div class="field"><label>Guest Count</label><input type="number" placeholder="e.g. 150"></div>
+      </div>
+      <div class="field full" style="margin-bottom:24px;">
+        <label>Tell us about the event</label>
+        <textarea placeholder="Date, venue, cuisine preferences..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Enquiry</button>
+      <div class="form-note" id="cateringNote"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="section-head reveal">
+    <span class="kicker">Find Us</span>
+    <h2>Visit or Reach Out</h2>
+  </div>
+  <div class="contact-grid">
+    <ul class="contact-list reveal">
+      <li>
+        <span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <div><h4>Address</h4><p>16-2, 16/B, Chanchalguda, Saidabad Main Road, Akbarbagh, New Malakpet, Hyderabad, Telangana 500059</p></div>
+      </li>
+      <li>
+        <span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <div><h4>Phone</h4><p><a href="tel:9700342799">9700342799</a></p></div>
+      </li>
+      <li>
+        <span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg></span>
+        <div><h4>Email</h4><p><a href="mailto:info@imperialrestaurant.com">info@imperialrestaurant.com</a></p></div>
+      </li>
+      <li>
+        <span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+        <div><h4>Opening Hours</h4><p>11:00 AM – 11:30 PM · Open all week</p></div>
+      </li>
+    </ul>
+    <div class="map-frame reveal">
+      <iframe loading="lazy" src="https://www.google.com/maps?q=17.3635687,78.5032187&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">IMPERIAL <span>MULTI CUISINE</span></div>
+      <p>Authentic Hyderabadi biryani and multi-cuisine dining in New Malakpet, Hyderabad. Dine in, order online, or book your next celebration with us.</p>
+      <div class="social-row">
+        <a class="icon-btn" href="#" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a class="icon-btn" href="#" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a class="icon-btn" href="https://wa.me/919700342799" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#menu">Digital Menu</a></li>
+        <li><a href="#reserve">Reservations</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Newsletter</h5>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:4px;">Offers and new menu drops, occasionally.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('input').value=''; this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Imperial Multi Cuisine Restaurant. All rights reserved.</span>
+    <span><a href="#privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="#terms">Terms &amp; Conditions</a></span>
+  </div>
+</footer>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3>Your Order</h3>
+    <span style="cursor:pointer; color:var(--cream-dim); font-size:22px;" id="closeCart">&times;</span>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty">Your order is empty — add a dish from the menu.</div>
+  </div>
+  <div class="cart-foot">
+    <div class="cart-total"><span>Total</span><b id="cartTotal">₹0</b></div>
+    <button class="btn btn-primary" style="width:100%;" onclick="attemptCheckout()">Proceed to Payment</button>
+    <div class="payment-note">Checkout, live pricing and Razorpay/Stripe payment require a connected backend and menu database — this preview simulates the ordering flow only.</div>
+  </div>
+</div>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <div class="lightbox-box" id="lightboxBox"></div>
+</div>
+
+<script>
+/* ---------------- Data ---------------- */
+const dishes = [
+  {name:"Hyderabadi Dum Biryani", desc:"Slow-cooked on dum with aromatic basmati and a secret spice blend.", tag:"Bestseller"},
+  {name:"Chicken Biryani", desc:"Tender chicken layered with fragrant long-grain rice."},
+  {name:"Mutton Biryani", desc:"Rich, bone-in mutton simmered to fall-off-the-bone tenderness."},
+  {name:"Family Pack Biryani", desc:"Generous portions built for four, made to share."},
+  {name:"Veg Biryani", desc:"Garden vegetables and paneer layered with saffron rice."},
+  {name:"Butter Chicken", desc:"Charcoal-grilled chicken in a velvety tomato-butter gravy."},
+  {name:"Kebab Platter", desc:"Seekh, boti and reshmi kebabs straight off the tandoor."},
+  {name:"Chinese Fried Rice", desc:"Wok-tossed rice with a smoky Indo-Chinese finish."}
+];
+
+const menu = {
+  Biryani: [
+    ["Chicken Biryani","Half / Full available",249],
+    ["Mutton Biryani","Slow-cooked, bone-in",379],
+    ["Veg Biryani","Paneer & garden vegetables",199],
+    ["Family Pack Biryani","Serves 4",899]
+  ],
+  Starters: [
+    ["Chicken 65","Spicy, deep-fried classic",229],
+    ["Chicken Tikka","Char-grilled, tandoor smoked",259],
+    ["Paneer Tikka","Marinated cottage cheese skewers",219],
+    ["Mixed Kebab Platter","Seekh, boti, reshmi",449]
+  ],
+  "Main Course": [
+    ["Butter Chicken","Creamy tomato-butter gravy",299],
+    ["Kadai Chicken","Onion-capsicum masala",279],
+    ["Paneer Butter Masala","Rich cashew-tomato gravy",249],
+    ["Dal Tadka","Tempered yellow lentils",159]
+  ],
+  Chinese: [
+    ["Veg / Chicken Fried Rice","Wok-tossed, smoky",189],
+    ["Hakka Noodles","Veg or chicken",189],
+    ["Chicken Manchurian","Indo-Chinese classic",239],
+    ["Schezwan Rice","Spicy Schezwan sauce",199]
+  ],
+  Beverages: [
+    ["Fresh Lime Soda","Sweet or salted",89],
+    ["Soft Drinks","Assorted",69],
+    ["Sweet Lassi","Chilled, creamy",99],
+    ["Mango Mocktail","Seasonal fruit blend",129]
+  ],
+  Desserts: [
+    ["Double Ka Meetha","Hyderabadi bread pudding",119],
+    ["Gulab Jamun","Classic, syrup-soaked",99],
+    ["Ice Cream","Vanilla, butterscotch, chocolate",89]
+  ]
+};
+
+const features = [
+  ["Authentic Hyderabadi Taste","Recipes passed down and kept true to tradition."],
+  ["Fresh Ingredients","Sourced daily, cooked to order."],
+  ["Experienced Chefs","Decades of combined biryani expertise."],
+  ["Family-Friendly Dining","Spacious seating built for groups."],
+  ["Fast Service","From kitchen to table, quickly."],
+  ["Affordable Prices","Generous portions, honest pricing."],
+  ["Hygienic Kitchen","Clean, monitored food-prep standards."],
+  ["Online Ordering","Order ahead for pickup or delivery."],
+  ["Catering Services","We cook for your events too."]
+];
+
+const galleryLabels = [
+  ["Dining Area","g1"], ["Signature Biryani",""], ["Chef at Work",""],
+  ["Starters Spread",""], ["Family Seating",""], ["Kitchen",""],
+  ["Desserts Counter",""], ["Restaurant Exterior",""]
+];
+
+const reviews = [
+  ["Anitha R.", "Regular guest", 5, "The best Hyderabadi biryani in town — amazing taste, generous portions, and excellent service every visit."],
+  ["Mohammed F.", "Family dinner", 5, "Ordered the family pack for a birthday. Everything arrived hot and the mutton biryani was outstanding."],
+  ["Priya K.", "First-time visitor", 4, "Loved the ambience and the kebab platter. Would come back for the desserts alone."]
+];
+
+/* ---------------- Render: dishes ---------------- */
+const dishRow = document.getElementById('dishRow');
+dishes.forEach(d=>{
+  const el = document.createElement('div');
+  el.className = 'dish-card';
+  el.innerHTML = `${d.tag ? `<span class="dish-tag">${d.tag}</span>` : ''}
+    <div class="dish-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11h18M3 11a9 9 0 0 1 18 0M3 11v2a9 9 0 0 0 18 0v-2"/></svg></div>
+    <h3>${d.name}</h3><p>${d.desc}</p>`;
+  dishRow.appendChild(el);
+});
+
+/* ---------------- Render: menu tabs ---------------- */
+const tabsEl = document.getElementById('menuTabs');
+const panelsEl = document.getElementById('menuPanels');
+let cart = {};
+
+Object.keys(menu).forEach((cat, i)=>{
+  const tab = document.createElement('div');
+  tab.className = 'menu-tab' + (i===0 ? ' active' : '');
+  tab.textContent = cat;
+  tab.onclick = ()=>{
+    document.querySelectorAll('.menu-tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.menu-panel').forEach(p=>p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('panel-'+i).classList.add('active');
+  };
+  tabsEl.appendChild(tab);
+
+  const panel = document.createElement('div');
+  panel.className = 'menu-panel' + (i===0 ? ' active' : '');
+  panel.id = 'panel-'+i;
+  menu[cat].forEach(([name, desc, price])=>{
+    const row = document.createElement('div');
+    row.className = 'menu-item';
+    const key = cat+'|'+name;
+    row.innerHTML = `
+      <div class="menu-item-info"><h4>${name}</h4><span>${desc}</span></div>
+      <div class="menu-item-right">
+        <span class="menu-price">₹${price}</span>
+        <button class="add-btn" data-key="${key}" data-name="${name}" data-price="${price}">+</button>
+      </div>`;
+    panel.appendChild(row);
+  });
+  panelsEl.appendChild(panel);
+});
+
+/* ---------------- Cart logic ---------------- */
+const cartDrawer = document.getElementById('cartDrawer');
+const overlay = document.getElementById('overlay');
+const cartBody = document.getElementById('cartBody');
+const cartTotalEl = document.getElementById('cartTotal');
+const cartCountEl = document.getElementById('cartCount');
+
+document.body.addEventListener('click', (e)=>{
+  const btn = e.target.closest('.add-btn');
+  if(!btn) return;
+  const key = btn.dataset.key, name = btn.dataset.name, price = Number(btn.dataset.price);
+  cart[key] = cart[key] || {name, price, qty:0};
+  cart[key].qty += 1;
+  btn.classList.add('added');
+  btn.textContent = '✓';
+  setTimeout(()=>{ btn.classList.remove('added'); btn.textContent = '+'; }, 700);
+  renderCart();
+  openCart();
+});
+
+function renderCart(){
+  const keys = Object.keys(cart);
+  cartCountEl.textContent = keys.reduce((s,k)=>s+cart[k].qty,0);
+  if(keys.length===0){
+    cartBody.innerHTML = '<div class="cart-empty">Your order is empty — add a dish from the menu.</div>';
+    cartTotalEl.textContent = '₹0';
+    return;
+  }
+  let total = 0;
+  cartBody.innerHTML = keys.map(k=>{
+    const item = cart[k];
+    total += item.price * item.qty;
+    return `<div class="cart-line">
+      <div><div class="name">${item.name}</div><div class="qty">Qty ${item.qty}</div></div>
+      <div class="price">₹${item.price * item.qty}</div>
+    </div>`;
+  }).join('');
+  cartTotalEl.textContent = '₹' + total;
+}
+
+function openCart(){ cartDrawer.classList.add('open'); overlay.classList.add('open'); }
+function closeCart(){ cartDrawer.classList.remove('open'); overlay.classList.remove('open'); }
+document.getElementById('cartToggle').onclick = openCart;
+document.getElementById('closeCart').onclick = closeCart;
+overlay.onclick = ()=>{ closeCart(); closeLightbox(); };
+
+function openMenuOrder(){ /* just scrolls via href, kept for clarity */ }
+
+function attemptCheckout(){
+  if(Object.keys(cart).length===0){ return; }
+  alert('This is a design preview — connecting Razorpay/Stripe checkout needs a live backend and secure order database, which sits outside a static preview.');
+}
+
+/* ---------------- Features ---------------- */
+const featureGrid = document.getElementById('featureGrid');
+features.forEach(([title, desc])=>{
+  const cell = document.createElement('div');
+  cell.className = 'feature-cell';
+  cell.innerHTML = `<div class="fi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 6.8L22 9l-5.6 4.6L18 22l-6-4.2L6 22l1.6-8.4L2 9l7.6-.2z"/></svg></div>
+    <h4>${title}</h4><p>${desc}</p>`;
+  featureGrid.appendChild(cell);
+});
+
+/* ---------------- Gallery ---------------- */
+const galleryGrid = document.getElementById('galleryGrid');
+galleryLabels.forEach(([label, cls])=>{
+  const tile = document.createElement('div');
+  tile.className = 'gallery-tile ' + cls;
+  tile.style.background = `linear-gradient(155deg, var(--maroon-2), var(--charcoal-3))`;
+  tile.innerHTML = `<div class="fill">${label}</div>`;
+  tile.onclick = ()=> openLightbox(label);
+  galleryGrid.appendChild(tile);
+});
+
+const lightbox = document.getElementById('lightbox');
+const lightboxBox = document.getElementById('lightboxBox');
+function openLightbox(label){
+  lightboxBox.textContent = label;
+  lightbox.classList.add('open');
+}
+function closeLightbox(){ lightbox.classList.remove('open'); }
+document.getElementById('lightboxClose').onclick = closeLightbox;
+
+/* ---------------- Reviews ---------------- */
+const reviewGrid = document.getElementById('reviewGrid');
+reviews.forEach(([name, meta, stars, text])=>{
+  const card = document.createElement('div');
+  card.className = 'review-card';
+  card.innerHTML = `<div class="stars">${'★'.repeat(stars)}${'☆'.repeat(5-stars)}</div>
+    <p>"${text}"</p>
+    <div class="review-who">
+      <div class="review-avatar">${name.charAt(0)}</div>
+      <div><div class="name">${name}</div><div class="meta">${meta}</div></div>
+    </div>`;
+  reviewGrid.appendChild(card);
+});
+
+/* ---------------- Forms ---------------- */
+document.getElementById('reserveForm').addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const note = document.getElementById('reserveNote');
+  note.textContent = "Request received — our team will call to confirm your table shortly.";
+  note.classList.add('show');
+});
+function checkAvailability(e){
+  e.preventDefault();
+  const note = document.getElementById('reserveNote');
+  note.textContent = "Tables are typically available — confirm your details and reserve to lock it in.";
+  note.classList.add('show');
+}
+document.getElementById('cateringForm').addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const note = document.getElementById('cateringNote');
+  note.textContent = "Enquiry sent — our catering team will reach out within 24 hours.";
+  note.classList.add('show');
+});
+
+/* ---------------- Header scroll state ---------------- */
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', ()=>{
+  header.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* ---------------- Mobile nav ---------------- */
+const hamburger = document.getElementById('hamburger');
+const mainNav = document.getElementById('mainNav');
+hamburger.onclick = ()=>{
+  const open = mainNav.style.display === 'block';
+  mainNav.style.display = open ? '' : 'block';
+  if(!open){
+    mainNav.style.position='absolute';
+    mainNav.style.top='100%'; mainNav.style.left='0'; mainNav.style.right='0';
+    mainNav.style.background='rgba(20,15,12,0.98)';
+    mainNav.style.padding='20px 5%';
+    mainNav.querySelector('ul').style.flexDirection='column';
+    mainNav.querySelector('ul').style.gap='18px';
+  }
+};
+
+/* ---------------- Reveal on scroll ---------------- */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); } });
+}, {threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
